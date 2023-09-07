@@ -16,5 +16,5 @@ e com animaçẽs CSS feitas á mão.
 
 # Links
 
-Veja como a Feature fica no seu Dispositivo: 
+Veja como a Feature fica no seu Dispositivo: https://feature-search.vercel.app/ <br>
 API-JSON Utilizada no Project: https://json-api-fswv.onrender.com/users
