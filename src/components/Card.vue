@@ -71,7 +71,7 @@
       </header>
 
       <div class="flex flex-col justify-between w-full h-full overflow-hidden">
-        <main class="w-full h-full overflow-scroll p-3">
+        <main class="w-full h-full overflow-auto p-3">
           <!-- IF INPUT IS EMPTY -->
           <div
             v-if="inputValue === ''"
