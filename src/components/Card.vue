@@ -100,7 +100,7 @@
 
           <!-- DATA LAUDING -->
           <div
-          v-show="dataLouding"
+          v-show="dataLouding && inputValue !== ''"
           class="w-full h-full flex items-center justify-center text-center"
         >
           <div class="flex items-center gap-2 flex-wrap justify-center">
@@ -125,7 +125,7 @@
         </div>
           <!-- SEM RESULTADOS -->
           <div
-            v-if="dataNotFound === true"
+            v-if="dataNotFound === true && inputValue !== ''"
             class="w-full h-full flex items-center justify-center text-center"
           >
             <div class="flex items-center gap-2 flex-wrap justify-center">
