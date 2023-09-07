@@ -100,7 +100,7 @@
 
           <!-- DATA LAUDING -->
           <div
-          v-if="dataLouding"
+          v-show="dataLouding"
           class="w-full h-full flex items-center justify-center text-center"
         >
           <div class="flex items-center gap-2 flex-wrap justify-center">
@@ -146,7 +146,7 @@
 
           <!-- IF HAS A RESULT -->
           <div
-            v-if="inputValue !== ''"
+            v-show="inputValue !== '' && dataLouding ===  false"
             class="userResult grid w-full grid-cols-1 gap-7 p-5 mt-3 items-start"
           >
             <!-- USERS -->
@@ -231,6 +231,7 @@ export default {
           );
           const data = await request.data;
 
+          this.dataLouding = false;
           // TRANSFORMANDO UM OBJECT EM UM ARRAY
           const dataArray = Array.isArray(data) ? data : [data];
 
@@ -241,7 +242,7 @@ export default {
               user.apelido.toLowerCase().startsWith(query) ||
               user.apelido.toLowerCase() === query
           );
-          this.dataLouding = false;
+          
           if (userFound.length === 0) {
             this.dataNotFound = true;
           } else {
