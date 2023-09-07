@@ -6,6 +6,7 @@
       <header class="w-full px-5 flex items-center justify-between space-x-3">
         <div>
           <button
+          @click="filterUsers"
             id="pesquisar"
             class="hover:text-green-500 transition-all relative text-green-400"
           >
