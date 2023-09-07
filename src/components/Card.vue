@@ -78,7 +78,7 @@
             class="w-full h-full flex items-center justify-center text-center"
           >
             <div class="flex items-center gap-2 flex-wrap justify-center">
-              <p class="font-semibold text-zinc-300" id="textInitial">
+              <p class="font-semibold text-zinc-300 textInitial">
                 {{ text }}
               </p>
               <svg
@@ -104,7 +104,7 @@
           class="w-full h-full flex items-center justify-center text-center"
         >
           <div class="flex items-center gap-2 flex-wrap justify-center">
-            <p class="font-semibold text-zinc-300" id="textInitial">
+            <p class="font-semibold text-zinc-300 textInitial">
               Aguarde...
             </p>
             <svg
@@ -129,11 +129,11 @@
             class="w-full h-full flex items-center justify-center text-center"
           >
             <div class="flex items-center gap-2 flex-wrap justify-center">
-              <p class="font-semibold text-zinc-500">Nenhum Dado Encontrado</p>
+              <p class="font-semibold text-zinc-300 textInitial">Nenhum Dado Encontrado</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
-                class="bi bi-app-indicator w-6 h-6 text-zinc-500"
+                class="bi bi-app-indicator w-6 h-6 text-zinc-500 iconInitial"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -293,7 +293,8 @@ input {
 .boxSearch {
   height: 29rem;
 }
-#textInitial,
+.textInitial{font-size: 14px;}
+.textInitial,
 .iconInitial {
   transition: all 0.15s ease-in-out;
   animation: opacidade 1s ease-in-out alternate infinite;
